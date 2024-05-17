@@ -19,4 +19,4 @@ Route::get('/products/{product}/edit', [ProdutoController::class, 'edit'])->name
 Route::put('/products/{product}', [ProdutoController::class, 'update'])->name('products.update');
 
 // Rota para excluir um produto
-Route::delete('/products/{product}', [ProdutoController::class, 'destroy'])->name('products.destroy');
+Route::delete('/products/{product}/destroy', [ProdutoController::class, 'destroy'])->name('products.destroy');
